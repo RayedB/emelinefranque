@@ -1,0 +1,118 @@
+{
+  "brand": {
+    "name": "EMELINE FRANQUE"
+  },
+  "hero": {
+    "subtitle": "PRÉVENTES",
+    "title": "Le Sac Cœurs",
+    "subtitle_text": "L'accessoire coup de coeur pour les beaux jours - Édition Limitée - Par Emeline Franque",
+    "badge_text": "Préventes jusqu'au 17 Juin 2025",
+    "buttons": {
+      "primary": "PRE-COMMANDEZ",
+      "primary_url": "https://buy.stripe.com/fZuaEX3dJ1iQ9PM25OcAo00",
+      "secondary": "DECOUVRIR"
+    },
+    "promotion": {
+      "discount": "20% OFF",
+      "timeframe": "THIS WEEK"
+    }
+  },
+  "product": {
+    "title": "Le Sac Cœurs",
+    "price": "32€ - Frais de port inclus",
+    "description": "🖤 Coup de cœur assuré ! Ce sac bourse imprimé cœurs est LE détail qui fait toute la différence. Léger, stylé et ultra pratique — il vous suit partout avec amour ✨",
+    "delivery": "Livraison offerte en point relais Chronopost Pickup ou Mondial Relay",
+    "button": "JE PRE-COMMANDE",
+    "url": "https://buy.stripe.com/fZuaEX3dJ1iQ9PM25OcAo00"
+  },
+  "masonry": {
+    "title": "Featured Products",
+    "products": [
+      {
+        "id": 2,
+        "name": "Le Sac Cœurs Noir",
+        "category": "Handbags",
+        "height": "tall",
+        "image": "EMELINEFRANQUE_BAG_02.jpg"
+      },
+      {
+        "id": 13,
+        "name": "Le Sac Cœurs Vintage",
+        "category": "Handbags",
+        "height": "tall",
+        "image": "EMELINEFRANQUE_BAG_13.jpg"
+      },
+      {
+        "id": 16,
+        "name": "Le Sac Cœurs Parisien",
+        "category": "Handbags",
+        "height": "tall",
+        "image": "EMELINEFRANQUE_BAG_16.jpg"
+      },
+      {
+        "id": 17,
+        "name": "Le Sac Cœurs Couture",
+        "category": "Handbags",
+        "height": "tall",
+        "image": "EMELINEFRANQUE_BAG_17.jpg"
+      },
+
+      {
+        "id": 19,
+        "name": "Le Sac Cœurs Exclusive",
+        "category": "Handbags",
+        "height": "tall",
+        "image": "EMELINEFRANQUE_BAG_19.jpg"
+      },
+      {
+        "id": 25,
+        "name": "Le Sac Cœurs Sublime",
+        "category": "Handbags",
+        "height": "tall",
+        "image": "EMELINEFRANQUE_BAG_25.jpg"
+      },
+      {
+        "id": 27,
+        "name": "Le Sac Cœurs Gracieux",
+        "category": "Handbags",
+        "height": "tall",
+        "image": "EMELINEFRANQUE_BAG_27.jpg"
+      },
+      {
+        "id": 29,
+        "name": "Le Sac Cœurs Délicat",
+        "category": "Handbags",
+        "height": "tall",
+        "image": "EMELINEFRANQUE_BAG_29.jpg"
+      },
+      {
+        "id": 30,
+        "name": "Le Sac Cœurs Splendide",
+        "category": "Handbags",
+        "height": "tall",
+        "image": "EMELINEFRANQUE_BAG_30.jpg"
+      },
+      {
+        "id": 31,
+        "name": "Le Sac Cœurs Exquis",
+        "category": "Handbags",
+        "height": "tall",
+        "image": "EMELINEFRANQUE_BAG_31.jpg"
+      },
+      {
+        "id": 32,
+        "name": "Le Sac Cœurs Précieux",
+        "category": "Handbags",
+        "height": "tall",
+        "image": "EMELINEFRANQUE_BAG_32.jpg"
+      },
+      {
+        "id": 33,
+        "name": "Le Sac Cœurs Merveilleux",
+        "category": "Handbags",
+        "height": "tall",
+        "image": "EMELINEFRANQUE_BAG_33.jpg"
+      }
+    ]
+  }
+} 
