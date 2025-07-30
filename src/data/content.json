@@ -5,10 +5,10 @@
   "hero": {
     "subtitle": "PRÉVENTES",
     "title": "Le Sac Cœurs",
-    "subtitle_text": "L'accessoire coup de coeur pour les beaux jours - Édition Limitée - Par Emeline Franque",
-    "badge_text": "Préventes jusqu'au 17 Juin 2025",
+    "subtitle_text": "Ton allié de cet été par Emeline Franque - disponible maintenant",
+    "badge_text": "18 pièces restantes",
     "buttons": {
-      "primary": "PRE-COMMANDEZ",
+      "primary": "J'ACHÈTE",
       "primary_url": "https://buy.stripe.com/fZuaEX3dJ1iQ9PM25OcAo00",
       "secondary": "DECOUVRIR"
     },
@@ -20,13 +20,15 @@
   "product": {
     "title": "Le Sac Cœurs",
     "price": "32€ - Frais de port inclus",
-    "description": "🖤 Coup de cœur assuré ! Ce sac bourse imprimé cœurs est LE détail qui fait toute la différence. Léger, stylé et ultra pratique — il vous suit partout avec amour ✨",
+    "description": "🖤 Coup de cœur assuré ! Ce sac bourse en tissu imprimé cœurs est LE détail qui fait toute la différence. Léger, stylé et ultra pratique — il vous suit partout avec amour ✨",
     "delivery": "Livraison offerte en point relais Chronopost Pickup ou Mondial Relay",
-    "button": "JE PRE-COMMANDE",
+    "button": "J'ACHÈTE",
+    "sizing": "Dimensions : 23 x 29 x 13 cm",
+    "lead_time": "Livraison immédiate ou après les vacances d'août",
     "url": "https://buy.stripe.com/fZuaEX3dJ1iQ9PM25OcAo00"
   },
   "masonry": {
-    "title": "Featured Products",
+    "title": "Le Sac Cœurs",
     "products": [
       {
         "id": 2,

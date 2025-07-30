@@ -14,8 +14,8 @@ const playfairDisplay = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Emeline Franque - Designer Handbags",
-  description: "New bag collection 2021 - Designer handbags by Emeline Franque",
+  title: "Emeline Franque - Le Sac Cœurs",
+  description: "Le Sac Cœurs, déniché par Emeline Franque",
 };
 
 export default function RootLayout({
