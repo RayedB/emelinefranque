@@ -7,16 +7,10 @@ import Image from 'next/image';
 const images = [
   '/images/banners/look-bracelet-hiver-emeline-franque.jpg',
   '/images/banners/bracelet-perles-vintage-collection-emeline-franque.jpg',
-  '/images/banners/bracelet-perles-hiver-emeline-franque.jpg',
-  '/images/banners/bracelet-perles-ete-emeline-franque.jpg',
+  '/images/products/bracelet-perle-automne-emeline-franque.jpg',
   '/images/banners/bracelet-perles-automne-emeline-franque.jpg',
-  '/images/banners/bracelet-perles-pack-complet-emeline-franque.jpg',
-  '/images/banners/portes-bracelet-perles-hiver-automne-emeline-franque.jpg',
   '/images/banners/bracelet-perles-lifestyle-emeline-franque.jpg',
-  '/images/banners/bracelet-perles-detail-emeline-franque.jpg',
-  '/images/banners/bracelet-perles-closeup-emeline-franque.jpg',
-  '/images/banners/bracelet-perles-texture-emeline-franque.jpg',
-  '/images/banners/bracelet-perles-pattern-emeline-franque.jpg',
+  '/images/banners/bracelet-perles-hiver-emeline-franque.jpg',
 ];
 
 export default function ImageSlider() {
