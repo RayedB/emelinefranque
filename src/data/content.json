@@ -28,7 +28,7 @@
         "shipping": "+3€ de frais de port",
         "image": "bracelet-perle-hiver-emeline-franque.jpg",
         "imageZoom": "bracelet-perle-hiver-zoom-emeline-franque.jpg",
-        "url": "https://buy.stripe.com/hiver"
+        "url": "https://buy.stripe.com/aFabJ101xf9G2nkdOwcAo04"
       },
       {
         "id": "ete",
@@ -38,7 +38,7 @@
         "shipping": "+3€ de frais de port",
         "image": "bracelet-perle-ete-emeline-franque.jpg",
         "imageZoom": "bracelet-perle-ete-zoom-emeline-franque.jpg",
-        "url": "https://buy.stripe.com/ete"
+        "url": "https://buy.stripe.com/bJe14n15B1iQ8LI39ScAo02"
       },
       {
         "id": "automne",
@@ -48,7 +48,7 @@
         "shipping": "+3€ de frais de port",
         "image": "bracelet-perle-automne-emeline-franque.jpg",
         "imageZoom": "bracelet-perle-automne-zoom-emeline-franque.jpg",
-        "url": "https://buy.stripe.com/automne"
+        "url": "https://buy.stripe.com/fZu00j9C7gdKfa611KcAo03"
       }
     ]
   },
@@ -64,7 +64,7 @@
       "Parfait pour toutes les saisons"
     ],
     "image": "bracelet-perle-pack-saison.jpg",
-    "url": "https://buy.stripe.com/pack",
+    "url": "https://buy.stripe.com/cNiaEX6pV1iQ0fc4dWcAo01",
     "button": "Commander le pack"
   },
   "masonry": {
