@@ -3,13 +3,13 @@
     "name": "EMELINE FRANQUE"
   },
   "hero": {
-    "subtitle": "PRÉVENTES",
-    "title": "Le Sac Cœurs",
-    "subtitle_text": "Ton allié de cet été par Emeline Franque - disponible maintenant",
-    "badge_text": "2 pièces restantes",
+    "subtitle": "Collection Vintage",
+    "title": "Bracelets Vintage",
+    "subtitle_text": "Une collection qui réveille vos souvenirs d'enfance avec ces bracelets aux charmes vintage années 90.",
+    "badge_text": "NOUVEAU",
     "buttons": {
-      "primary": "J'ACHÈTE",
-      "primary_url": "https://buy.stripe.com/fZuaEX3dJ1iQ9PM25OcAo00",
+      "primary": "DÉCOUVRIR",
+      "primary_url": "#products",
       "secondary": "DECOUVRIR"
     },
     "promotion": {
@@ -17,104 +17,92 @@
       "timeframe": "THIS WEEK"
     }
   },
-  "product": {
-    "title": "Le Sac Cœurs",
-    "price": "32€ - Frais de port inclus",
-    "description": "🖤 Coup de cœur assuré ! Ce sac bourse en tissu imprimé cœurs est LE détail qui fait toute la différence. Léger, stylé et ultra pratique — il vous suit partout avec amour ✨",
-    "delivery": "Livraison offerte en point relais Chronopost Pickup ou Mondial Relay",
-    "button": "J'ACHÈTE",
-    "sizing": "Dimensions : 23 x 29 x 13 cm",
-    "lead_time": "Livraison immédiate ou après les vacances d'août",
-    "url": "https://buy.stripe.com/fZuaEX3dJ1iQ9PM25OcAo00"
-  },
-  "masonry": {
-    "title": "Le Sac Cœurs",
-    "products": [
+  "products": {
+    "title": "Choisissez votre bracelet",
+    "items": [
       {
-        "id": 2,
-        "name": "Le Sac Cœurs Noir",
-        "category": "Handbags",
-        "height": "tall",
-        "image": "EMELINEFRANQUE_BAG_02.jpg"
+        "id": "hiver",
+        "name": "Bracelet Hiver",
+        "description": "Perles blanches et ourson vintage. Le blanc indémodable qui va avec tout.",
+        "price": "15€",
+        "shipping": "+3€ de frais de port",
+        "image": "bracelet-perle-hiver-emeline-franque.jpg",
+        "imageZoom": "bracelet-perle-hiver-zoom-emeline-franque.jpg",
+        "url": "https://buy.stripe.com/hiver"
       },
       {
-        "id": 13,
-        "name": "Le Sac Cœurs Vintage",
-        "category": "Handbags",
-        "height": "tall",
-        "image": "EMELINEFRANQUE_BAG_13.jpg"
+        "id": "ete",
+        "name": "Bracelet Été",
+        "description": "Perles pastel et ourson bleu. Idéal pour mettre en avant votre bronzage !",
+        "price": "15€",
+        "shipping": "+3€ de frais de port",
+        "image": "bracelet-perle-ete-emeline-franque.jpg",
+        "imageZoom": "bracelet-perle-ete-zoom-emeline-franque.jpg",
+        "url": "https://buy.stripe.com/ete"
       },
       {
-        "id": 16,
-        "name": "Le Sac Cœurs Parisien",
-        "category": "Handbags",
-        "height": "tall",
-        "image": "EMELINEFRANQUE_BAG_16.jpg"
-      },
-      {
-        "id": 17,
-        "name": "Le Sac Cœurs Couture",
-        "category": "Handbags",
-        "height": "tall",
-        "image": "EMELINEFRANQUE_BAG_17.jpg"
-      },
-
-      {
-        "id": 19,
-        "name": "Le Sac Cœurs Exclusive",
-        "category": "Handbags",
-        "height": "tall",
-        "image": "EMELINEFRANQUE_BAG_19.jpg"
-      },
-      {
-        "id": 25,
-        "name": "Le Sac Cœurs Sublime",
-        "category": "Handbags",
-        "height": "tall",
-        "image": "EMELINEFRANQUE_BAG_25.jpg"
-      },
-      {
-        "id": 27,
-        "name": "Le Sac Cœurs Gracieux",
-        "category": "Handbags",
-        "height": "tall",
-        "image": "EMELINEFRANQUE_BAG_27.jpg"
-      },
-      {
-        "id": 29,
-        "name": "Le Sac Cœurs Délicat",
-        "category": "Handbags",
-        "height": "tall",
-        "image": "EMELINEFRANQUE_BAG_29.jpg"
-      },
-      {
-        "id": 30,
-        "name": "Le Sac Cœurs Splendide",
-        "category": "Handbags",
-        "height": "tall",
-        "image": "EMELINEFRANQUE_BAG_30.jpg"
-      },
-      {
-        "id": 31,
-        "name": "Le Sac Cœurs Exquis",
-        "category": "Handbags",
-        "height": "tall",
-        "image": "EMELINEFRANQUE_BAG_31.jpg"
-      },
-      {
-        "id": 32,
-        "name": "Le Sac Cœurs Précieux",
-        "category": "Handbags",
-        "height": "tall",
-        "image": "EMELINEFRANQUE_BAG_32.jpg"
-      },
-      {
-        "id": 33,
-        "name": "Le Sac Cœurs Merveilleux",
-        "category": "Handbags",
-        "height": "tall",
-        "image": "EMELINEFRANQUE_BAG_33.jpg"
+        "id": "automne",
+        "name": "Bracelet Automne",
+        "description": "Perles multicolores vintage. Les couleurs à la mode cette rentrée.",
+        "price": "15€",
+        "shipping": "+3€ de frais de port",
+        "image": "bracelet-perle-automne-emeline-franque.jpg",
+        "imageZoom": "bracelet-perle-automne-zoom-emeline-franque.jpg",
+        "url": "https://buy.stripe.com/automne"
       }
     ]
+  },
+  "bundle": {
+    "title": "Pack Complet",
+    "price": "45€",
+    "originalPrice": "54€",
+    "savings": "Au lieu de 54€",
+    "benefits": [
+      "Les 3 bracelets vintage",
+      "Livraison offerte",
+      "Économisez 9€",
+      "Parfait pour toutes les saisons"
+    ],
+    "image": "bracelet-perle-pack-saison.jpg",
+    "url": "https://buy.stripe.com/pack",
+    "button": "Commander le pack"
+  },
+  "masonry": {
+    "title": "Bracelets Vintage",
+    "products": [
+      {
+        "id": 1,
+        "name": "Bracelet Hiver Close-up",
+        "category": "Bracelets",
+        "height": "tall",
+        "image": "bracelet-perle-pack-saison.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Bracelet Été Close-up",
+        "category": "Bracelets",
+        "height": "tall",
+        "image": "EMELINEFRANQUE_BRACELET_02.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Bracelet Automne Close-up",
+        "category": "Bracelets",
+        "height": "tall",
+        "image": "EMELINEFRANQUE_BRACELET_03.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Pack Complet",
+        "category": "Bracelets",
+        "height": "tall",
+        "image": "EMELINEFRANQUE_BRACELET_04.jpg"
+      }
+    ]
+  },
+  "isSoldOut": false,
+  "paymentLinks": {
+    "chronopost": "https://buy.stripe.com/chronopost",
+    "mondialRelay": "https://buy.stripe.com/mondialrelay"
   }
-} 
+}

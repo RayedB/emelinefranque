@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import content from '../data/content.json';
 import Link from 'next/link';
 import ImageSlider from '../components/ImageSlider';
+import ProductImage from '../components/ProductImage';
 
 export default async function Home({
   searchParams,
@@ -10,9 +11,6 @@ export default async function Home({
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>
 }) {
   const resolvedSearchParams = await searchParams;
-  
-  // Sold out state
-  const isSoldOut = false;
   
   // Helper function to append current query params to a URL
   const appendQueryParams = (baseUrl: string) => {
@@ -56,12 +54,8 @@ export default async function Home({
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 items-start">
-              <Link href={isSoldOut ? "#" : appendQueryParams(content.hero.buttons.primary_url)} className={isSoldOut ? "pointer-events-none" : ""}>
-                <button className={`px-8 py-3 text-sm font-medium tracking-wide transition-colors font-[family-name:var(--font-inter)] ${
-                  isSoldOut 
-                    ? "bg-gray-400 text-gray-600 cursor-not-allowed" 
-                    : "bg-gray-800 text-white hover:bg-gray-900"
-                }`}>
+              <Link href={content.hero.buttons.primary_url}>
+                <button className="px-8 py-3 text-sm font-medium tracking-wide transition-colors font-[family-name:var(--font-inter)] bg-gray-800 text-white hover:bg-gray-900">
                   {content.hero.buttons.primary}
                 </button>
               </Link>
@@ -80,71 +74,85 @@ export default async function Home({
         </div>
       </div>
 
-      {/* Product Section */}
-      <div className="bg-white py-20">
+      {/* Individual Products Section */}
+      <div id="products" className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-8">
-          <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-16 items-center">
-            
-            {/* Product Image */}
-            <div className="flex justify-center w-full">
-              <div className="w-96 h-96 rounded-lg flex items-center justify-center">
-                <div className="w-80 h-80 flex items-center justify-center text-white shadow-2xl">
-                  <Image src="/images/gallery/EMELINEFRANQUE_BAG_23.jpg" alt="Hero" width={685} height={913} className="rounded-lg px-auto" />
+          <h2 className="text-center text-4xl md:text-5xl font-light text-gray-800 mb-16 font-[family-name:var(--font-playfair)]">
+            {content.products.title}
+          </h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+            {content.products.items.map((product) => (
+              <div key={product.id} className="text-center">
+                <div className="mb-6">
+                  <ProductImage
+                    regularImage={product.image}
+                    zoomImage={product.imageZoom}
+                    alt={product.name}
+                  />
                 </div>
+                <h3 className="text-2xl font-medium text-gray-800 mb-3 font-[family-name:var(--font-playfair)]">
+                  {product.name}
+                </h3>
+                <p className="text-gray-600 mb-4 px-4 font-[family-name:var(--font-inter)]">
+                  {product.description}
+                </p>
+                <div className="text-xl font-semibold text-amber-700 mb-1 font-[family-name:var(--font-inter)]">
+                  {product.price}
+                </div>
+                <div className="text-sm text-gray-500 italic mb-6 font-[family-name:var(--font-inter)]">
+                  {product.shipping}
+                </div>
+                <Link href={appendQueryParams(product.url)}>
+                  <button className="px-8 py-3 bg-amber-700 text-white rounded-full hover:bg-amber-800 transition-colors font-medium tracking-wide uppercase text-sm font-[family-name:var(--font-inter)]">
+                    Commander
+                  </button>
+                </Link>
               </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Bundle Section */}
+      <div className="bg-gradient-to-br from-[#f8f6f3] to-[#e8e1d5] py-20">
+        <div className="max-w-7xl mx-auto px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            {/* Bundle Image */}
+            <div className="relative w-full aspect-square rounded-2xl overflow-hidden shadow-xl">
+              <Image
+                src={`/images/products/${content.bundle.image}`}
+                alt="Pack Complet"
+                fill
+                className="object-cover"
+              />
             </div>
-            
-            
-            {/* Product Details */}
-            <div className="space-y-6 w-full">
-              <h2 className="text-4xl md:text-5xl font-light text-amber-700 font-[family-name:var(--font-playfair)]">
-                {content.product.title}
+
+            {/* Bundle Content */}
+            <div className="space-y-6">
+              <h2 className="text-4xl md:text-5xl font-light text-gray-800 font-[family-name:var(--font-playfair)]">
+                {content.bundle.title}
               </h2>
-              
-              <div className="text-3xl font-semibold text-gray-800 font-[family-name:var(--font-inter)]">
-                {content.product.price}
+              <div className="text-4xl font-bold text-amber-700 font-[family-name:var(--font-inter)]">
+                {content.bundle.price}
+              </div>
+              <div className="text-lg text-gray-600 font-[family-name:var(--font-inter)]">
+                {content.bundle.savings}
               </div>
               
-              <p className="text-gray-600 leading-relaxed text-base font-[family-name:var(--font-inter)]">
-                {content.product.description}
-              </p>
-              <p className="text-gray-600 leading-relaxed text-base font-[family-name:var(--font-inter)]">
-                {content.product.sizing}
-              </p>
-  
-              <p className="text-gray-600 font-bold leading-relaxed text-base font-[family-name:var(--font-inter)]">
-                {content.product.delivery}
-              </p>
-              <p className="text-gray-600 leading-relaxed text-base font-[family-name:var(--font-inter)]">
-                {content.product.lead_time}
-              </p>
-              
-              {/* Shipping Images */}
-              <div className="flex gap-4 items-center">
-                <Image 
-                  src="/images/gallery/frais-de-transport-chronopost-point-relais-erreur-livraison-retrait-depot.jpg"
-                  alt="Chronopost Shipping"
-                  width={100}
-                  height={100}
-                  className="rounded-lg"
-                />
-                <Image 
-                  src="/images/gallery/mondialrelay-shippingbo.png"
-                  alt="Mondial Relay Shipping"
-                  width={150}
-                  height={150}
-                  className="rounded-lg"
-                />
-              </div>
-              
+              <ul className="space-y-3">
+                {content.bundle.benefits.map((benefit, index) => (
+                  <li key={index} className="flex items-center text-gray-700 font-[family-name:var(--font-inter)]">
+                    <span className="text-amber-700 font-bold text-xl mr-3">✓</span>
+                    {benefit}
+                  </li>
+                ))}
+              </ul>
+
               <div className="pt-6">
-                <Link href={isSoldOut ? "#" : appendQueryParams(content.product.url)} className={isSoldOut ? "pointer-events-none" : ""}>
-                  <button className={`px-12 py-4 text-base font-medium tracking-wide transition-colors rounded-full font-[family-name:var(--font-inter)] ${
-                    isSoldOut 
-                      ? "bg-gray-400 text-gray-600 cursor-not-allowed" 
-                      : "bg-amber-700 text-white hover:bg-amber-800"
-                  }`}>
-                    {content.product.button}
+                <Link href={appendQueryParams(content.bundle.url)}>
+                  <button className="px-12 py-4 bg-amber-700 text-white rounded-full hover:bg-amber-800 transition-colors font-medium tracking-wide uppercase text-base font-[family-name:var(--font-inter)]">
+                    {content.bundle.button}
                   </button>
                 </Link>
               </div>
@@ -152,8 +160,6 @@ export default async function Home({
           </div>
         </div>
       </div>
-
-     
     </div>
   );
 }
