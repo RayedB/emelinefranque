@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useRef } from 'react';
+import { useCallback } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Image from 'next/image';
 
@@ -19,7 +19,6 @@ interface ImageSliderProps {
 
 export default function ImageSlider({ onImageClick }: ImageSliderProps) {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
-  const touchStartX = useRef<number | null>(null);
 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();
@@ -35,26 +34,7 @@ export default function ImageSlider({ onImageClick }: ImageSliderProps) {
     }
   };
 
-  // Touch swipe handlers for modal
-  const handleTouchStart = (e: React.TouchEvent) => {
-    touchStartX.current = e.touches[0].clientX;
-  };
-  
-  const handleTouchEnd = (e: React.TouchEvent) => {
-    if (touchStartX.current === null) return;
-    const deltaX = e.changedTouches[0].clientX - touchStartX.current;
-    if (deltaX > 50) {
-      const currentIndex = emblaApi?.selectedScrollSnap() || 0;
-      const prevIndex = (currentIndex - 1 + images.length) % images.length;
-      onImageClick && onImageClick(prevIndex);
-    }
-    if (deltaX < -50) {
-      const currentIndex = emblaApi?.selectedScrollSnap() || 0;
-      const nextIndex = (currentIndex + 1) % images.length;
-      onImageClick && onImageClick(nextIndex);
-    }
-    touchStartX.current = null;
-  };
+
 
   return (
     <div className="relative w-full">

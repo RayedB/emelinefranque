@@ -9,21 +9,13 @@ import ProductImage from '../components/ProductImage';
 import ImageModal from '../components/ImageModal';
 import { useState } from 'react';
 
-export default function Home({
-  searchParams,
-}: {
-  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
-}) {
+export default function Home() {
   const [modalOpen, setModalOpen] = useState(false);
   const [modalIndex, setModalIndex] = useState(0);
   
   // Helper function to append current query params to a URL
   const appendQueryParams = (baseUrl: string) => {
-    // Convert searchParams to a clean Record<string, string>
-    const cleanParams: Record<string, string> = {};
-    
-    // Since we're now a client component, we need to handle searchParams differently
-    // For now, we'll just return the base URL
+
     return baseUrl;
   };
 
@@ -44,7 +36,7 @@ export default function Home({
       <div className="relative min-h-screen flex items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
           
-          {/* Left Content - Badge and Title */}
+          {/* Left Content - Badge, Title, Description and Button */}
           <div className="text-left space-y-8 pt-5 lg:pt-0 z-10 order-1 lg:order-1">
             <span className="bg-white text-gray-800 px-4 py-1 rounded-full text-sm font-medium tracking-wide font-[family-name:var(--font-inter)]">
               {content.hero.badge_text}
@@ -52,20 +44,6 @@ export default function Home({
             <h1 className="text-5xl md:text-7xl font-light text-gray-800 leading-tight font-[family-name:var(--font-playfair)]">
               {content.hero.title}
             </h1>
-          </div>
-          
-          {/* Carousel - Above description on mobile */}
-          <div className="relative flex justify-center lg:justify-end w-full h-full z-10 order-2 lg:order-2">
-            {/* Circular background element */}
-            <div className="absolute inset-0 w-72 h-72 sm:w-96 sm:h-96 lg:w-[500px] lg:h-[500px] rounded-full bg-gradient-to-br from-[#E5D5C3] to-[#D4C4B0] opacity-60 -translate-y-12 translate-x-12 pointer-events-none"></div>
-            {/* Image Slider */}
-            <div className="relative z-10 w-72 h-80 sm:w-96 sm:h-96 lg:w-96 lg:h-[500px] flex items-center justify-center">
-              <ImageSlider onImageClick={handleImageClick} />
-            </div>
-          </div>
-          
-          {/* Description and Button - Below carousel on mobile */}
-          <div className="text-left space-y-8 z-10 order-3 lg:order-1 col-span-1 lg:col-span-1">
             <div className="flex flex-col gap-4">
               <p className="text-gray-700 text-2xl md:text-md font-light leading-relaxed font-[family-name:var(--font-playfair)]">
                 {content.hero.subtitle_text}
@@ -77,6 +55,16 @@ export default function Home({
                   {content.hero.buttons.primary}
                 </button>
               </Link>
+            </div>
+          </div>
+          
+          {/* Right Content - Carousel */}
+          <div className="relative flex justify-center lg:justify-end w-full h-full z-10 order-2 lg:order-2">
+            {/* Circular background element */}
+            <div className="absolute inset-0 w-72 h-72 sm:w-96 sm:h-96 lg:w-[500px] lg:h-[500px] rounded-full bg-gradient-to-br from-[#E5D5C3] to-[#D4C4B0] opacity-60 -translate-y-12 translate-x-12 pointer-events-none"></div>
+            {/* Image Slider */}
+            <div className="relative z-10 w-72 h-80 sm:w-96 sm:h-96 lg:w-96 lg:h-[500px] flex items-center justify-center">
+              <ImageSlider onImageClick={handleImageClick} />
             </div>
           </div>
         </div>
