@@ -18,20 +18,23 @@ export default function ProductImage({ regularImage, zoomImage, alt }: ProductIm
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      {/* Regular Image */}
+      {/* Regular Image - Always visible by default */}
       <Image
         src={`/images/products/${regularImage}`}
         alt={alt}
         fill
-        className={`object-cover transition-opacity duration-300 ${isHovered ? 'opacity-0' : 'opacity-100'}`}
+        className="object-cover opacity-100"
+        priority
       />
       
-      {/* Zoom Image */}
+      {/* Zoom Image - Only visible on hover (desktop only) */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={`/images/products/${zoomImage}`}
         alt={alt}
-        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${isHovered ? 'opacity-100' : 'opacity-0'}`}
+        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${
+          isHovered ? 'opacity-100' : 'opacity-0'
+        } hidden md:block`}
       />
     </div>
   );

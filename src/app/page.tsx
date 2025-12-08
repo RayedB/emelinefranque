@@ -96,14 +96,32 @@ export default function Home() {
                 <div className="text-xl font-semibold text-amber-700 mb-1 font-[family-name:var(--font-inter)]">
                   {product.price}
                 </div>
-                <div className="text-sm text-gray-500 italic mb-6 font-[family-name:var(--font-inter)]">
+                <div className="text-sm text-gray-500 italic mb-2 font-[family-name:var(--font-inter)]">
                   {product.shipping}
                 </div>
-                <Link href={appendQueryParams(product.url)}>
-                  <button className="px-8 py-3 bg-amber-700 text-white rounded-full hover:bg-amber-800 transition-colors font-medium tracking-wide uppercase text-sm font-[family-name:var(--font-inter)]">
-                    Commander
+                {'soldOut' in product && product.soldOut ? (
+                  <button disabled className="px-8 py-3 bg-gray-400 text-white rounded-full cursor-not-allowed font-medium tracking-wide uppercase text-sm font-[family-name:var(--font-inter)] mb-4">
+                    Épuisé
                   </button>
-                </Link>
+                ) : (
+                  <Link href={appendQueryParams(product.url)}>
+                    <button className="px-8 py-3 bg-amber-700 text-white rounded-full hover:bg-amber-800 transition-colors font-medium tracking-wide uppercase text-sm font-[family-name:var(--font-inter)] mb-4">
+                      Commander
+                    </button>
+                  </Link>
+                )}
+                <div className="text-sm text-gray-500 italic font-[family-name:var(--font-inter)] flex items-center justify-center gap-2 mb-2">
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" />
+                  </svg>
+                  {'soldOut' in product && product.soldOut ? 'Épuisé' : 'En stock'}
+                </div>
+                <div className="text-sm text-gray-500 italic font-[family-name:var(--font-inter)] flex items-center justify-center gap-2">
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                  </svg>
+                  {product.delivery}
+                </div>
               </div>
             ))}
           </div>
@@ -146,11 +164,17 @@ export default function Home() {
               </ul>
 
               <div className="pt-6">
-                <Link href={appendQueryParams(content.bundle.url)}>
-                  <button className="px-12 py-4 bg-amber-700 text-white rounded-full hover:bg-amber-800 transition-colors font-medium tracking-wide uppercase text-base font-[family-name:var(--font-inter)]">
-                    {content.bundle.button}
+                {content.bundle.soldOut ? (
+                  <button disabled className="px-12 py-4 bg-gray-400 text-white rounded-full cursor-not-allowed font-medium tracking-wide uppercase text-base font-[family-name:var(--font-inter)]">
+                    Épuisé
                   </button>
-                </Link>
+                ) : (
+                  <Link href={appendQueryParams(content.bundle.url)}>
+                    <button className="px-12 py-4 bg-amber-700 text-white rounded-full hover:bg-amber-800 transition-colors font-medium tracking-wide uppercase text-base font-[family-name:var(--font-inter)]">
+                      {content.bundle.button}
+                    </button>
+                  </Link>
+                )}
               </div>
             </div>
           </div>
