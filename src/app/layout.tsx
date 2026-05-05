@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
-import AnalyticsWrapper from "../components/AnalyticsWrapper";
+import { Analytics } from "@vercel/analytics/next"
 
 const inter = Inter({
   variable: "--font-inter",
@@ -14,8 +14,8 @@ const playfairDisplay = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Emeline Franque - Bracelet Perles",
-  description: "Les bracelets perles, dénichés par Emeline Franque",
+  title: "Emeline Franque - Le Sac Cœurs",
+  description: "Le Sac Cœurs, déniché par Emeline Franque",
 };
 
 export default function RootLayout({
@@ -29,7 +29,7 @@ export default function RootLayout({
         className={`${inter.variable} ${playfairDisplay.variable} antialiased`}
       >
         {children}
-        <AnalyticsWrapper />
+        <Analytics/>
       </body>
     </html>
   );
