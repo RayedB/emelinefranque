@@ -3,14 +3,9 @@
 import { useCallback, useState, useRef } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Image from 'next/image';
+import content from '../data/content.json';
 
-const images = [
-  '/images/products/EMELINEFRANQUE_BAG_02.jpg',
-  '/images/products/EMELINEFRANQUE_BAG_03.jpg',
-  '/images/products/EMELINEFRANQUE_BAG_19.jpg',
-  '/images/products/EMELINEFRANQUE_BAG_27.jpg',
-  '/images/products/EMELINEFRANQUE_BAG_29.jpg',
-];
+const images = content.carousel;
 
 export default function ImageSlider() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });

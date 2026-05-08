@@ -14,8 +14,20 @@ const playfairDisplay = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Emeline Franque - Le Sac Cœurs",
-  description: "Le Sac Cœurs, déniché par Emeline Franque",
+  title: "Emeline Franque - Le Sac Damiers",
+  description: "Le Sac Damiers, créé par Emeline Franque, disponible maintenant",
+  openGraph: {
+    title: "Emeline Franque - Le Sac Damiers",
+    description: "Le Sac Damiers, créé par Emeline Franque, disponible maintenant",
+    images: [
+      { url: "/images/logo.png" },
+    ],
+    type: "website",
+    siteName: "Emeline Franque",
+    url: "https://emelinefranque.com",
+    locale: "fr_FR",
+    countryName: "France"
+  },
 };
 
 export default function RootLayout({

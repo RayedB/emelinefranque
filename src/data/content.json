@@ -4,12 +4,12 @@
   },
   "hero": {
     "subtitle": "PRÉVENTES",
-    "title": "Le Sac Cœurs",
+    "title": "Le Sac Damier",
     "subtitle_text": "Ton allié de cet été par Emeline Franque - disponible maintenant",
-    "badge_text": "2 pièces restantes",
+    "badge_text": "Livraison offerte du 7 mai au 11 mai",
     "buttons": {
       "primary": "J'ACHÈTE",
-      "primary_url": "https://buy.stripe.com/fZuaEX3dJ1iQ9PM25OcAo00",
+      "primary_url": "https://buy.stripe.com/28E00j15B6Da1jgeSAcAo05",
       "secondary": "DECOUVRIR"
     },
     "promotion": {
@@ -18,99 +18,107 @@
     }
   },
   "product": {
-    "title": "Le Sac Cœurs",
-    "price": "32€ - Frais de port inclus",
-    "description": "🖤 Coup de cœur assuré ! Ce sac bourse en tissu imprimé cœurs est LE détail qui fait toute la différence. Léger, stylé et ultra pratique — il vous suit partout avec amour ✨",
+    "title": "Le Sac Damier",
+    "price": "39€ - Frais de port inclus",
+    "description": "Ultra coloré, ultra léger, ce sac Damier rose et vert avec ses quelques fleurs discrètes va t’accompagner partout cet été. De la plage aux terrasses toi seul aura cette pièce unique pleine de peps !",
     "delivery": "Livraison offerte en point relais Chronopost Pickup ou Mondial Relay",
     "button": "J'ACHÈTE",
     "sizing": "Dimensions : 23 x 29 x 13 cm",
-    "lead_time": "Livraison immédiate ou après les vacances d'août",
-    "url": "https://buy.stripe.com/fZuaEX3dJ1iQ9PM25OcAo00"
+    "lead_time": "Vendu avec ses deux cordons: un rose et un blanc",
+    "url": "https://buy.stripe.com/28E00j15B6Da1jgeSAcAo05"
   },
+  "carousel": [
+    "/images/products/bag_00.jpg",
+    "/images/products/bag_02.jpg",
+    "/images/products/bag_03.jpg",
+    "/images/products/bag_04.jpg",
+    "/images/products/bag_05.jpg",
+    "/images/products/bag_07.jpg",
+    "/images/products/bag_08.jpg"
+  ],
   "masonry": {
-    "title": "Le Sac Cœurs",
+    "title": "Le Sac Damier",
     "products": [
       {
         "id": 2,
-        "name": "Le Sac Cœurs Noir",
+        "name": "Le Sac Damier Noir",
         "category": "Handbags",
         "height": "tall",
         "image": "EMELINEFRANQUE_BAG_02.jpg"
       },
       {
         "id": 13,
-        "name": "Le Sac Cœurs Vintage",
+        "name": "Le Sac Damier Vintage",
         "category": "Handbags",
         "height": "tall",
         "image": "EMELINEFRANQUE_BAG_13.jpg"
       },
       {
+        "id": 17,
+        "name": "Le Sac Damier Couture",
+        "category": "Handbags",
+        "height": "tall",
+        "image": "EMELINEFRANQUE_BAG_17.jpg"
+      },
+      {
         "id": 16,
-        "name": "Le Sac Cœurs Parisien",
+        "name": "Le Sac Damier Parisien",
         "category": "Handbags",
         "height": "tall",
         "image": "EMELINEFRANQUE_BAG_16.jpg"
       },
       {
-        "id": 17,
-        "name": "Le Sac Cœurs Couture",
-        "category": "Handbags",
-        "height": "tall",
-        "image": "EMELINEFRANQUE_BAG_17.jpg"
-      },
-
-      {
         "id": 19,
-        "name": "Le Sac Cœurs Exclusive",
+        "name": "Le Sac Damier Exclusive",
         "category": "Handbags",
         "height": "tall",
         "image": "EMELINEFRANQUE_BAG_19.jpg"
       },
       {
         "id": 25,
-        "name": "Le Sac Cœurs Sublime",
+        "name": "Le Sac Damier Sublime",
         "category": "Handbags",
         "height": "tall",
         "image": "EMELINEFRANQUE_BAG_25.jpg"
       },
       {
         "id": 27,
-        "name": "Le Sac Cœurs Gracieux",
+        "name": "Le Sac Damier Gracieux",
         "category": "Handbags",
         "height": "tall",
         "image": "EMELINEFRANQUE_BAG_27.jpg"
       },
       {
         "id": 29,
-        "name": "Le Sac Cœurs Délicat",
+        "name": "Le Sac Damier Délicat",
         "category": "Handbags",
         "height": "tall",
         "image": "EMELINEFRANQUE_BAG_29.jpg"
       },
       {
         "id": 30,
-        "name": "Le Sac Cœurs Splendide",
+        "name": "Le Sac Damier Splendide",
         "category": "Handbags",
         "height": "tall",
         "image": "EMELINEFRANQUE_BAG_30.jpg"
       },
       {
         "id": 31,
-        "name": "Le Sac Cœurs Exquis",
+        "name": "Le Sac Damier Exquis",
         "category": "Handbags",
         "height": "tall",
         "image": "EMELINEFRANQUE_BAG_31.jpg"
       },
       {
         "id": 32,
-        "name": "Le Sac Cœurs Précieux",
+        "name": "Le Sac Damier Précieux",
         "category": "Handbags",
         "height": "tall",
         "image": "EMELINEFRANQUE_BAG_32.jpg"
       },
       {
         "id": 33,
-        "name": "Le Sac Cœurs Merveilleux",
+        "name": "Le Sac Damier Merveilleux",
         "category": "Handbags",
         "height": "tall",
         "image": "EMELINEFRANQUE_BAG_33.jpg"

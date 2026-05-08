@@ -35,7 +35,7 @@ export default async function Home({
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#D4C4B0] to-[#C8B99C] relative overflow-hidden">
+    <div className="min-h-screen bg-[#F0EBE5] relative overflow-hidden">
       <Navbar />
       
       {/* Hero Section */}
@@ -71,7 +71,7 @@ export default async function Home({
           {/* Right Content - Model Image/Slider */}
           <div className="relative flex justify-center lg:justify-end w-full h-full z-10">
             {/* Circular background element */}
-            <div className="absolute inset-0 w-72 h-72 sm:w-96 sm:h-96 lg:w-[500px] lg:h-[500px] rounded-full bg-gradient-to-br from-[#E5D5C3] to-[#D4C4B0] opacity-60 -translate-y-12 translate-x-12 pointer-events-none"></div>
+            <div className="absolute inset-0 w-72 h-72 sm:w-96 sm:h-96 lg:w-[500px] lg:h-[500px] rounded-full bg-[#E2D9D1] opacity-40 -translate-y-12 translate-x-12 pointer-events-none"></div>
             {/* Image Slider */}
             <div className="relative z-10 w-72 h-80 sm:w-96 sm:h-96 lg:w-96 lg:h-[500px] flex items-center justify-center">
               <ImageSlider />
@@ -89,7 +89,7 @@ export default async function Home({
             <div className="flex justify-center w-full">
               <div className="w-96 h-96 rounded-lg flex items-center justify-center">
                 <div className="w-80 h-80 flex items-center justify-center text-white shadow-2xl">
-                  <Image src="/images/gallery/EMELINEFRANQUE_BAG_23.jpg" alt="Hero" width={685} height={913} className="rounded-lg px-auto" />
+                  <Image src="/images/gallery/sac-damier-emeline.jpg" alt="Le Sac Damier" width={685} height={913} className="rounded-lg px-auto" />
                 </div>
               </div>
             </div>
