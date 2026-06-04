@@ -6,7 +6,7 @@
     "subtitle": "PRÉVENTES",
     "title": "Le Sac Damier",
     "subtitle_text": "Ton allié de cet été par Emeline Franque - disponible maintenant",
-    "badge_text": "Livraison offerte du 7 mai au 11 mai",
+    "badge_text": "Livraison offerte",
     "buttons": {
       "primary": "J'ACHÈTE",
       "primary_url": "https://buy.stripe.com/28E00j15B6Da1jgeSAcAo05",
@@ -21,7 +21,7 @@
     "title": "Le Sac Damier",
     "price": "39€ - Frais de port inclus",
     "description": "Ultra coloré, ultra léger, ce sac Damier rose et vert avec ses quelques fleurs discrètes va t’accompagner partout cet été. De la plage aux terrasses toi seul aura cette pièce unique pleine de peps !",
-    "delivery": "Livraison offerte en point relais Chronopost Pickup ou Mondial Relay",
+    "delivery": "Livraison offerte en point Mondial Relay",
     "button": "J'ACHÈTE",
     "sizing": "Dimensions : 23 x 29 x 13 cm",
     "lead_time": "Vendu avec ses deux cordons: un rose et un blanc",
